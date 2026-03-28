@@ -1,6 +1,9 @@
 function getCustomerFullName(customer) {
   // BUG: Doesn't handle missing fields properly
-  return customer.firstName + " " + customer.lastName.toUpperCase();
+  if (customer.firstName && customer.lastName){
+    return customer.firstName + " " + customer.lastName;
+  }
+  return customer.firstName || customer.lastName;
 }
 
 module.exports = getCustomerFullName;
