@@ -4,8 +4,8 @@ function canFulfillOrder(order, inventory) {
     if (!inventory[item.id] || inventory[item.id] < item.quantity) {
       return false;
     }
-    return true;
   }
+    return true;
 }
 
 module.exports = canFulfillOrder;
