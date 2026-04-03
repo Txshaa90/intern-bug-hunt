@@ -5,10 +5,13 @@ function orderStatusLabel(status) {
   switch (status) {
     case "pending":
       label = "Pending";
+      break;
     case "shipped":
       label = "Shipped";
+      break;
     case "delivered":
       label = "Delivered";
+      break;
     default:
       label = "Unknown";
   }
